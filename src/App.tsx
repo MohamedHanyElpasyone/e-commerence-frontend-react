@@ -1,11 +1,14 @@
+import Sidebar from "./components/Sidebar";
+import useProducts from "./hooks/useProducts";
+
 const App = () => {
+  const { products } = useProducts();
+
   return (
-    <>
-      <h1 className="text-3xl text-red-600 font-bold underline">
-        Hello world!
-      </h1>
-    </>
+    <div className="flex h-screen">
+      <Sidebar products={products} />
+    </div>
   );
-}
+};
 
 export default App;
