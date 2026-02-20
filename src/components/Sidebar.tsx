@@ -4,14 +4,7 @@ const Sidebar = ({ products }: Products) => {
   const categories = Array.from(
     new Set(products.map((product) => product.category)),
   );
-  const keywords =[
-    "apple",
-    "watch",
-    "Fashion",
-    "trend",
-    "shoes",
-    "shirt",
-  ];
+  const keywords = ["apple", "watch", "Fashion", "trend", "shoes", "shirt"];
 
   return (
     <div className="w-64 p-5 h-screen">
