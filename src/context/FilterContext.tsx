@@ -7,10 +7,10 @@ interface FilterProviderProps {
 interface FilterContextType {
   searchQuery: string;
   setSearchQuery: (query: string) => void;
-  minPrice: number | undefined;
-  setMinPrice: (price: number | undefined) => void;
-  maxPrice: number | undefined;
-  setMaxPrice: (price: number | undefined) => void;
+  minPrice: number |  string;
+  setMinPrice: (price: number | string) => void;
+  maxPrice: number | string;
+  setMaxPrice: (price: number | string) => void;
   selectedCategory: string;
   setSelectedCategory: (category: string) => void;
   keyword: string;
@@ -21,8 +21,8 @@ const FilterContext = createContext<FilterContextType | undefined>(undefined);
 
 export const FilterProvider = ({ children }: FilterProviderProps) => {
   const [searchQuery, setSearchQuery] = useState<string>("");
-  const [minPrice, setMinPrice] = useState<number | undefined>(undefined);
-  const [maxPrice, setMaxPrice] = useState<number | undefined>(undefined);
+  const [minPrice, setMinPrice] = useState<number | string>("");
+  const [maxPrice, setMaxPrice] = useState<number | string>("");
   const [selectedCategory, setSelectedCategory] = useState<string>("");
   const [keyword, setKeyword] = useState("");
 
