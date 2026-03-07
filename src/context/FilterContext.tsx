@@ -15,6 +15,11 @@ interface FilterContextType {
   setSelectedCategory: (category: string) => void;
   keyword: string;
   setKeyword: (Keyword: string) => void;
+  filter: string;
+  setFilter: (filter: string) => void;
+  currentPage: number;
+  setCurrentPage: (page: number) => void;
+  itemsPerPage: number;
 }
 
 const FilterContext = createContext<FilterContextType | undefined>(undefined);
@@ -25,7 +30,9 @@ export const FilterProvider = ({ children }: FilterProviderProps) => {
   const [maxPrice, setMaxPrice] = useState<number | string>("");
   const [selectedCategory, setSelectedCategory] = useState<string>("");
   const [keyword, setKeyword] = useState("");
-
+  const [filter, setFilter] = useState("all")
+  const [currentPage, setCurrentPage] = useState(1)
+  const itemsPerPage = 12
   return (
     <FilterContext.Provider
       value={{
@@ -39,6 +46,11 @@ export const FilterProvider = ({ children }: FilterProviderProps) => {
         setSelectedCategory,
         keyword,
         setKeyword,
+        filter,
+        setFilter,
+        currentPage,
+        setCurrentPage,
+        itemsPerPage
       }}
     >
       {children}

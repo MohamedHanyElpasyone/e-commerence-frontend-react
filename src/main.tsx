@@ -3,11 +3,14 @@ import { createRoot } from "react-dom/client";
 import "./index.css";
 import App from "./App.tsx";
 import { FilterProvider } from "./context/FilterContext.tsx";
+import { BrowserRouter as Router } from "react-router-dom";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    <FilterProvider>
-      <App />
-    </FilterProvider>
+    <Router>
+      <FilterProvider>
+        <App />
+      </FilterProvider>
+    </Router>
   </StrictMode>,
 );

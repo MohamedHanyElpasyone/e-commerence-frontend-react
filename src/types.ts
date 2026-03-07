@@ -1,5 +1,10 @@
 export interface Product {
   category: string;
+  price: number;
+  title: string;
+  rating: number;
+  id: number;
+  thumbnail: string;
 }
 
 export interface Data {
