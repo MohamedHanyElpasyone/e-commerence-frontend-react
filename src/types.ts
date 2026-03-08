@@ -5,6 +5,7 @@ export interface Product {
   rating: number;
   id: number;
   thumbnail: string;
+  description: string;
 }
 
 export interface Data {
