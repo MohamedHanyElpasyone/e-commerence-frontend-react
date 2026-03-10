@@ -10,7 +10,7 @@ const App = () => {
   return (
     <div className="flex h-screen">
       <Sidebar products={products} />
-      <div className="w-full flex justify-between flex-wrap">
+      <div className="w-full flex justify-center flex-wrap">
         <Routes>
           <Route path="/" element={<MainContent />} />
           <Route path="/products/:id" element={<ProductPage />} />

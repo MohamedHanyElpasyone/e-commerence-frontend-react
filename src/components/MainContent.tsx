@@ -40,7 +40,7 @@ const MainContent = () => {
   };
 
   return (
-    <section className="p-5 sm:w-160">
+    <section className="p-5 sm:w-100 lg:w-195  2xl:w-300 xl:w-250 md:w-160">
       <div className="mb-5">
         {/* == Filter button == */}
         <div className="flex flex-col sm:flex-row justify-between items-center">
@@ -79,7 +79,7 @@ const MainContent = () => {
           </div>
         </div>
         {/* == ProductCard == */}
-        <div className="grid grid-cols-4 sm:grid-cols-3 md:grid-cols-4 gap-5">
+        <div className="grid grid-cols-1  sm:grid-cols-2 md:grid-cols-4 gap-1 sm:gap-5">
           {filteredProducts.map((product: Product) => (
             <ProductCard
               key={product.id}

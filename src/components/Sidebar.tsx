@@ -49,17 +49,17 @@ const Sidebar = ({ products }: Products) => {
       <h1 className="text-2xl font-bold mb-10 mt-4">Shop Products</h1>
 
       {/* ==== Sidebar ==== */}
-      <section>
+      <section className="w-[inherit]">
         {/* == Search && Min & Max price inputs == */}
         <input
-          className="border-2 rounded px-2 sm:mb-0"
+          className="border-2 rounded px-2 sm:mb-0 py-3 w-full"
           type="text"
           placeholder="Search Product"
           name="search"
           value={searchQuery}
           onChange={(e) => setSearchQuery(e.target.value)}
         />
-        <div className="flex justify-center items-center">
+        <div className="flex justify-center items-center mt-3">
           <input
             className="border-2 mr-2 px-5 py-3 mb-3 w-full"
             type="text"
