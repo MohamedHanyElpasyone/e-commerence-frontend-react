@@ -6,7 +6,7 @@ This project demonstrates my skills in component design, state management, and r
 ---
 
 ## Version
-(Coming Soon)
+(1.0.0)
 
 ---
 
