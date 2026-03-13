@@ -32,9 +32,9 @@ This project demonstrates my skills in component design, state management, and r
 ---
 
 ## 🔗 Live Demo
-Coming soon (will be deployed on Netlify)
+[Demo](https://e-commerence-frontend.netlify.app)
 
 ---
 
 ## 📬 Contact
-Feel free to reach out for questions, feedback, or collaboration opportunities.
+Feel free to reach out via the contact section on [my website](https://mhany-dev-portfolio.netlify.app).
