@@ -27,7 +27,7 @@ This project demonstrates my skills in component design, state management, and r
 ---
 
 ## 📂 Project Status
-**In progress**
+**Done**
 
 ---
 
